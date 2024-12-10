@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* border: 1px solid red; */
+}
+
+:root {
+    --left-right-padding: 0 60px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: var(--left-right-padding);
+}
+
+/* FIRST SECTION */
+.firstSect {
+    background-color: lightgreen;
+    height: 100vh;
+}
+
+/* LANDING PAGE NAVBAR */
+.firstSect nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.firstSect nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.firstSect nav .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 80%;
+}
+
+.firstSect nav .wrap .logo {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+}
+
+.firstSect nav .wrap .login-button {
+    width: 80px;
+    height: 100%;
+    border: 2px solid rgb(70, 146, 70);
+    background: transparent;
+}
+
+/* LANDING PAGE CONTENT */
+.firstSect .content {
+    height: calc(100% - 50px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CONTENT LEFT SIDE */
+.firstSect .content .left-side {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.firstSect .content .left-side h1 {
+    margin-top: 12%;
+    font-size: 82px;
+    width: 90%;
+    font-weight: 500;
+    text-wrap: wrap;
+}
+
+.firstSect .content .left-side p {
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.firstSect .content .left-side .explore-button {
+    margin-top: 30px;
+    width: 140px;
+    height: 2.4rem;
+    font-weight: bold;
+    background-color: rgb(31, 51, 31);
+    color: white;
+    border: none;
+}
+
+/* CONTENT RIGHT SIDE */
+.firstSect .content .right-side {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+    height: 100%;
+}
+
+.firstSect .content .right-side .image {
+    width: 80%;
+    height: 90%;
+    margin-top: 20px;
+    display: flex;
+    align-items: end;
+    background-color: rgb(70, 146, 70);
+    border-radius: 100px 40px 100px 40px;
+}
+
+.firstSect .content .right-side .image .inner-image {
+    height: 90%;
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(31, 51, 31);
+}
+
+
+/* SECOND SECTION */
+.secondSect {
+    height: 100vh;
+    background-color: white;
+}
+
+.secondSect h2 {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.secondSect p {
+    margin-top: 8px;
+}
+
+.secondSect .banner {
+    height: calc(100% - 250px);
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.secondSect .banner .card {
+    height: 100%;
+    width: calc(100% / (var(--quantity) + 0.3));
+    background-color: green;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.secondSect .banner .card .img {
+    height: 90%;
+    width: 50%;
+    background-color: black;
+}
+
+.secondSect .banner .card p {
+    text-align: center;
+    position: absolute;
+    top: 100%;
+}
+
+.secondSect .bestSelling-button {
+    margin-top: 45px;
+    width: 120px;
+    height: 2.4rem;
+}
